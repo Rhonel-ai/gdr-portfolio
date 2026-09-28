@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <script>
+            (function () {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'light') { document.documentElement.classList.add('light-mode'); }
+                var lang = localStorage.getItem('siteLang');
+                if (lang === 'en') { document.documentElement.classList.add('lang-en'); }
+            })();
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contactez David Rhonel GOGAN par email, téléphone ou WhatsApp pour discuter de votre projet web.">
+        <meta name="author" content="David Rhonel GOGAN">
+
+        <title>Contact — David Rhonel GOGAN | Développeur Web</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+        <link rel="apple-touch-icon" href="images/favicon-180.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+        <link href="css/site-extra.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section class="preloader">
+            <div class="spinner"><span class="spinner-rotate"></span></div>
+        </section>
+
+        <a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+            <i class="bi-whatsapp"></i>
+        </a>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0 d-flex align-items-center gap-2">
+                    <img src="images/logo-gdr.svg" alt="GDR" style="width:32px;height:32px;border-radius:8px;">
+                    <span>GDR<span style="color:var(--secondary-color);">.dev</span></span>
+                </a>
+
+                <div class="d-flex align-items-center d-lg-none">
+                    <button class="lang-toggle me-2" type="button">EN</button>
+                    <button class="theme-toggle me-3" id="themeToggleMobile" type="button" aria-label="Toggle color theme">
+                        <i class="bi-moon-stars-fill theme-icon-dark"></i>
+                        <i class="bi-sun-fill theme-icon-light"></i>
+                    </button>
+                    <a class="custom-btn btn" href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">
+                        <i class="bi-whatsapp me-1"></i> WhatsApp
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html"><span data-lang="fr">Services</span><span data-lang="en">Services</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html"><span data-lang="fr">Projets</span><span data-lang="en">Projects</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span data-lang="fr">Contact</span><span data-lang="en">Contact</span></a></li>
+                    </ul>
+
+                    <div class="d-lg-flex align-items-center d-none ms-auto">
+                        <button class="lang-toggle me-3" type="button">EN</button>
+                        <button class="theme-toggle me-3" id="themeToggleDesktop" type="button" aria-label="Toggle color theme">
+                            <i class="bi-moon-stars-fill theme-icon-dark"></i>
+                            <i class="bi-sun-fill theme-icon-light"></i>
+                        </button>
+                        <a class="custom-btn btn" href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">
+                            <i class="bi-whatsapp me-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="page-hero pb-0">
+                <div class="container">
+                    <span class="section-eyebrow"><span data-lang="fr">$ ./contact.sh</span><span data-lang="en">$ ./contact.sh</span></span>
+                    <h1><span data-lang="fr">Parlons de votre projet</span><span data-lang="en">Let's talk about your project</span></h1>
+                    <p class="lead" data-lang="fr">Site vitrine, e-commerce, application métier... décrivez votre besoin, je vous réponds rapidement par email ou WhatsApp.</p>
+                    <p class="lead" data-lang="en">Showcase site, e-commerce, business application... describe what you need, I'll reply quickly by email or WhatsApp.</p>
+                </div>
+            </section>
+
+            <section class="contact section-padding pt-4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                            <div class="contact-info contact-info-border-start d-flex flex-column">
+                                <strong class="site-footer-title d-block mb-3"><span data-lang="fr">services/</span><span data-lang="en">services/</span></strong>
+                                <ul class="footer-menu">
+                                    <li class="footer-menu-item"><a href="services.html" class="footer-menu-link"><span data-lang="fr">Sites vitrines</span><span data-lang="en">Showcase sites</span></a></li>
+                                    <li class="footer-menu-item"><a href="services.html" class="footer-menu-link"><span data-lang="fr">Identité visuelle</span><span data-lang="en">Visual identity</span></a></li>
+                                    <li class="footer-menu-item"><a href="services.html" class="footer-menu-link"><span data-lang="fr">Sites e-commerce</span><span data-lang="en">E-commerce</span></a></li>
+                                    <li class="footer-menu-item"><a href="services.html" class="footer-menu-link">SEO</a></li>
+                                    <li class="footer-menu-item"><a href="services.html" class="footer-menu-link"><span data-lang="fr">Solutions digitales</span><span data-lang="en">Digital solutions</span></a></li>
+                                    <li class="footer-menu-item"><a href="services.html" class="footer-menu-link"><span data-lang="fr">Applications mobiles</span><span data-lang="en">Mobile apps</span></a></li>
+                                </ul>
+
+                                <strong class="site-footer-title d-block mt-4 mb-3"><span data-lang="fr">restons_connectés/</span><span data-lang="en">lets_connect/</span></strong>
+                                <ul class="social-icon">
+                                    <li class="social-icon-item"><a href="https://github.com/Rhonel-ai" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-github"></a></li>
+                                    <li class="social-icon-item"><a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="social-icon-link bi-whatsapp"></a></li>
+                                    <li class="social-icon-item"><a href="https://www.facebook.com/profile.php?id=61586300297934" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-facebook"></a></li>
+                                </ul>
+
+                                <strong class="site-footer-title d-block mt-4 mb-3"><span data-lang="fr">démarrer_un_projet()</span><span data-lang="en">start_a_project()</span></strong>
+                                <p class="mb-0"><span data-lang="fr">Disponible pour des projets freelance</span><span data-lang="en">Available for freelance projects</span></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                            <div class="contact-info d-flex flex-column">
+                                <strong class="site-footer-title d-block mb-3"><span data-lang="fr">à_propos/</span><span data-lang="en">about/</span></strong>
+                                <p class="mb-2" data-lang="fr">David Rhonel GOGAN, développeur full-stack basé à Cotonou. N'hésitez pas à me contacter.</p>
+                                <p class="mb-2" data-lang="en">David Rhonel GOGAN, full-stack developer based in Cotonou. Feel free to reach out.</p>
+
+                                <strong class="site-footer-title d-block mt-4 mb-3">email</strong>
+                                <p><a href="mailto:davidrhonelgogan4@gmail.com">davidrhonel<br>gogan4@gmail.com</a></p>
+
+                                <strong class="site-footer-title d-block mt-4 mb-3"><span data-lang="fr">téléphone</span><span data-lang="en">phone</span></strong>
+                                <p class="mb-2"><a href="tel:+2290150489089">(+229) 0150 489 089</a><br><a href="tel:+2290143075049">(+229) 0143 075 049</a></p>
+
+                                <strong class="site-footer-title d-block mt-4 mb-3">WhatsApp</strong>
+                                <p class="mb-0"><a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">+229 50 48 90 89</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <form id="contactForm" class="custom-form contact-form" role="form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Nom" required>
+                                            <label for="name"><span data-lang="fr">Nom</span><span data-lang="en">Name</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Adresse email" required>
+                                            <label for="email"><span data-lang="fr">Adresse email</span><span data-lang="en">Email address</span></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Site vitrine">
+                                            <label class="form-check-label" for="inlineCheckbox1">
+                                                <i class="bi bi-globe form-check-icon"></i>
+                                                <span class="form-check-label-text"><span data-lang="fr">Site vitrine</span><span data-lang="en">Showcase site</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Identité visuelle">
+                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                <i class="bi bi-lightbulb form-check-icon"></i>
+                                                <span class="form-check-label-text"><span data-lang="fr">Identité visuelle</span><span data-lang="en">Visual identity</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="E-commerce">
+                                            <label class="form-check-label" for="inlineCheckbox3">
+                                                <i class="bi bi-cart3 form-check-icon"></i>
+                                                <span class="form-check-label-text">E-commerce</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="SEO">
+                                            <label class="form-check-label" for="inlineCheckbox4">
+                                                <i class="bi bi-google form-check-icon"></i>
+                                                <span class="form-check-label-text">SEO</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Solutions digitales">
+                                            <label class="form-check-label" for="inlineCheckbox5">
+                                                <i class="bi bi-cpu form-check-icon"></i>
+                                                <span class="form-check-label-text"><span data-lang="fr">Solutions digitales</span><span data-lang="en">Digital solutions</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-6">
+                                        <div class="form-check form-check-inline me-0">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Application mobile">
+                                            <label class="form-check-label" for="inlineCheckbox6">
+                                                <i class="bi bi-phone form-check-icon"></i>
+                                                <span class="form-check-label-text"><span data-lang="fr">Application mobile</span><span data-lang="en">Mobile app</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Parlez-moi de votre projet" style="height:170px" required></textarea>
+                                            <label for="message"><span data-lang="fr">Parlez-moi de votre projet</span><span data-lang="en">Tell me about your project</span></label>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" id="time">
+
+                                    <div class="col-lg-4 col-12 ms-auto">
+                                        <button type="submit" id="submitBtn" class="form-control"><span data-lang="fr">Envoyer</span><span data-lang="en">Send</span></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <p class="mt-3" style="color:var(--p-color);font-size:13px;">
+                                <span data-lang="fr">Vous préférez une réponse immédiate ? Écrivez-moi directement sur</span>
+                                <span data-lang="en">Prefer an instant reply? Message me directly on</span>
+                                <a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" style="color:var(--secondary-color);">WhatsApp</a>.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <a href="index.html" class="navbar-brand d-flex align-items-center gap-2 mb-3">
+                            <img src="images/logo-gdr.svg" alt="GDR" style="width:30px;height:30px;border-radius:7px;">
+                            <span>GDR<span style="color:var(--secondary-color);">.dev</span></span>
+                        </a>
+                        <p class="mb-0" style="color:var(--p-color);">
+                            <span data-lang="fr">Développeur web full-stack basé à Cotonou, Bénin — disponible pour des projets freelance.</span>
+                            <span data-lang="en">Full-stack web developer based in Cotonou, Benin — available for freelance projects.</span>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">navigation/</span><span data-lang="en">navigate/</span></strong>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="index.html" class="footer-menu-link"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a></li>
+                            <li class="footer-menu-item"><a href="services.html" class="footer-menu-link">Services</a></li>
+                            <li class="footer-menu-item"><a href="projects.html" class="footer-menu-link"><span data-lang="fr">Projets</span><span data-lang="en">Projects</span></a></li>
+                            <li class="footer-menu-item"><a href="cv.html" class="footer-menu-link">CV</a></li>
+                            <li class="footer-menu-item"><a href="blog.html" class="footer-menu-link">Blog</a></li>
+                            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">restons_connectés/</span><span data-lang="en">lets_connect/</span></strong>
+                        <ul class="social-icon">
+                            <li class="social-icon-item"><a href="https://github.com/Rhonel-ai" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-github"></a></li>
+                            <li class="social-icon-item"><a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="social-icon-link bi-whatsapp"></a></li>
+                            <li class="social-icon-item"><a href="https://www.facebook.com/profile.php?id=61586300297934" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-facebook"></a></li>
+                            <li class="social-icon-item"><a href="mailto:davidrhonelgogan4@gmail.com" class="social-icon-link bi-envelope"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">contact/</span><span data-lang="en">contact/</span></strong>
+                        <p class="mb-2"><a href="mailto:davidrhonelgogan4@gmail.com">davidrhonelgogan4@gmail.com</a></p>
+                        <p class="mb-0"><a href="tel:+2290150489089">(+229) 0150 489 089</a><br><a href="tel:+2290143075049">(+229) 0143 075 049</a></p>
+                    </div>
+
+                    <div class="col-lg-12 col-12">
+                        <div class="copyright-text-wrap">
+                            <p class="mb-0">
+                                <span class="copyright-text">© 2026 <a href="index.html">David Rhonel GOGAN — GDR.dev</a>.
+                                <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights reserved.</span></span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/site-extra.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script>
+            (function () {
+                var root = document.documentElement;
+                var toggles = document.querySelectorAll('.theme-toggle');
+                toggles.forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        root.classList.toggle('light-mode');
+                        localStorage.setItem('theme', root.classList.contains('light-mode') ? 'light' : 'dark');
+                    });
+                });
+            })();
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.querySelector('.navbar');
+                var threshold = 50;
+                window.addEventListener('scroll', function () {
+                    navbar.classList.toggle('is-sticky', window.scrollY > threshold);
+                });
+            });
+        </script>
+
+        
+        <script>
+            emailjs.init("XufvEaj9xbtpv9C6U");
+            const form = document.getElementById("contactForm");
+            const btn = document.getElementById("submitBtn");
+            if (form) {
+                form.addEventListener("submit", function(e){
+                    e.preventDefault();
+                    btn.disabled = true;
+                    btn.innerHTML = (document.documentElement.classList.contains('lang-en')) ? "Sending..." : "Envoi en cours...";
+
+                    const services = [];
+                    document.querySelectorAll("input[type=checkbox]").forEach(item=>{
+                        if(item.checked){
+                            services.push(item.parentElement.querySelector(".form-check-label-text").innerText);
+                        }
+                    });
+
+                    const params = {
+                        from_name: document.getElementById("name").value,
+                        from_email: document.getElementById("email").value,
+                        to_email: "davidrhonelgogan4@gmail.com",
+                        subject: "Nouvelle demande de contact",
+                        services: services.join(", "),
+                        message: document.getElementById("message").value
+                    };
+
+                    emailjs.send("service_c3z4svb", "template_6vzkzpy", params)
+                    .then(function(){
+                        Swal.fire({
+                            icon: "success",
+                            title: document.documentElement.classList.contains('lang-en') ? "Message sent!" : "Message envoyé !",
+                            text: document.documentElement.classList.contains('lang-en') ? "Your message has been sent successfully." : "Votre message a bien été envoyé.",
+                            confirmButtonColor: "#2F8CFF"
+                        });
+                        form.reset();
+                        btn.disabled = false;
+                        btn.innerHTML = document.documentElement.classList.contains('lang-en') ? "Send" : "Envoyer";
+                    })
+                    .catch(function(error){
+                        console.log(error);
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oups...",
+                            text: document.documentElement.classList.contains('lang-en') ? "Something went wrong. Please try again." : "Une erreur est survenue. Veuillez réessayer.",
+                            confirmButtonColor: "#dc3545"
+                        });
+                        btn.disabled = false;
+                        btn.innerHTML = document.documentElement.classList.contains('lang-en') ? "Send" : "Envoyer";
+                    });
+                });
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <script>
+            (function () {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'light') { document.documentElement.classList.add('light-mode'); }
+                var lang = localStorage.getItem('siteLang');
+                if (lang === 'en') { document.documentElement.classList.add('lang-en'); }
+            })();
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="ELG Commerce, WazoBuy, Growth Digital Knowledge : découvrez les projets web développés par David Rhonel GOGAN (PHP, MySQL, Laravel, Bootstrap).">
+        <meta name="author" content="David Rhonel GOGAN">
+
+        <title>Projets — David Rhonel GOGAN | Développeur Web</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+        <link rel="apple-touch-icon" href="images/favicon-180.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+        <link href="css/site-extra.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section class="preloader">
+            <div class="spinner"><span class="spinner-rotate"></span></div>
+        </section>
+
+        <a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+            <i class="bi-whatsapp"></i>
+        </a>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0 d-flex align-items-center gap-2">
+                    <img src="images/logo-gdr.svg" alt="GDR" style="width:32px;height:32px;border-radius:8px;">
+                    <span>GDR<span style="color:var(--secondary-color);">.dev</span></span>
+                </a>
+
+                <div class="d-flex align-items-center d-lg-none">
+                    <button class="lang-toggle me-2" type="button">EN</button>
+                    <button class="theme-toggle me-3" id="themeToggleMobile" type="button" aria-label="Toggle color theme">
+                        <i class="bi-moon-stars-fill theme-icon-dark"></i>
+                        <i class="bi-sun-fill theme-icon-light"></i>
+                    </button>
+                    <a class="custom-btn btn" href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">
+                        <i class="bi-whatsapp me-1"></i> WhatsApp
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html"><span data-lang="fr">Services</span><span data-lang="en">Services</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html"><span data-lang="fr">Projets</span><span data-lang="en">Projects</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span data-lang="fr">Contact</span><span data-lang="en">Contact</span></a></li>
+                    </ul>
+
+                    <div class="d-lg-flex align-items-center d-none ms-auto">
+                        <button class="lang-toggle me-3" type="button">EN</button>
+                        <button class="theme-toggle me-3" id="themeToggleDesktop" type="button" aria-label="Toggle color theme">
+                            <i class="bi-moon-stars-fill theme-icon-dark"></i>
+                            <i class="bi-sun-fill theme-icon-light"></i>
+                        </button>
+                        <a class="custom-btn btn" href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">
+                            <i class="bi-whatsapp me-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="page-hero">
+                <div class="container">
+                    <span class="section-eyebrow"><span data-lang="fr">$ git log --projets</span><span data-lang="en">$ git log --projects</span></span>
+                    <h1><span data-lang="fr">Projets réalisés</span><span data-lang="en">Selected projects</span></h1>
+                    <p class="lead" data-lang="fr">Une sélection de projets réels, développés du cahier des charges jusqu'à la mise en production.</p>
+                    <p class="lead" data-lang="en">A selection of real projects, built from requirements all the way to production.</p>
+                </div>
+            </section>
+
+            <section class="projects section-padding pt-0">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-6 col-12 mb-4">
+                            <div class="projects-thumb h-100">
+                                <div class="projects-info">
+                                    <small class="projects-tag"><span data-lang="fr">application web</span><span data-lang="en">web application</span></small>
+                                    <h3 class="projects-title">ELG Commerce</h3>
+                                </div>
+                                <a href="images/projects/elg-commerce-dashboard.png" class="popup-image">
+                                    <img src="images/projects/elg-commerce-dashboard.png" class="projects-image img-fluid" alt="ELG Commerce">
+                                </a>
+                                <p style="color:var(--p-color);margin-top:14px;" data-lang="fr">Système de gestion de point de vente et de stock : suivi des ventes, calcul du profit et de la marge en temps réel, et module de suivi des dépenses par catégorie (achats, transport, loyer, salaires...).</p>
+                                <p style="color:var(--p-color);margin-top:14px;" data-lang="en">Point-of-sale and inventory management system: sales tracking, real-time profit &amp; margin calculation, and an expense-tracking module by category (purchases, transport, rent, payroll...).</p>
+                                <div class="project-stack">PHP · MySQL · JavaScript</div>
+                                <a href="https://elg.iceiy.com" target="_blank" rel="noopener noreferrer" class="projects-visit-btn"><span data-lang="fr">Visiter</span><span data-lang="en">Visit</span> <i class="bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 mb-4">
+                            <div class="projects-thumb h-100">
+                                <div class="projects-info">
+                                    <small class="projects-tag"><span data-lang="fr">solution digitale</span><span data-lang="en">digital solution</span></small>
+                                    <h3 class="projects-title">WazoBuy</h3>
+                                </div>
+                                <a href="images/projects/wazobuy-marketplace.png" class="popup-image">
+                                    <img src="images/projects/wazobuy-marketplace.png" class="projects-image img-fluid" alt="WazoBuy">
+                                </a>
+                                <p style="color:var(--p-color);margin-top:14px;" data-lang="fr">Marketplace béninoise mettant en relation acheteurs, vendeurs et livreurs, avec une landing page responsive pensée mobile-first.</p>
+                                <p style="color:var(--p-color);margin-top:14px;" data-lang="en">A Benin-based marketplace connecting buyers, sellers and delivery riders, with a mobile-first, responsive landing page.</p>
+                                <div class="project-stack">PHP · MySQL · Bootstrap</div>
+                                <a href="https://wazobuy.iceiy.com" target="_blank" rel="noopener noreferrer" class="projects-visit-btn"><span data-lang="fr">Visiter</span><span data-lang="en">Visit</span> <i class="bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 mb-4">
+                            <div class="projects-thumb h-100">
+                                <div class="projects-info">
+                                    <small class="projects-tag"><span data-lang="fr">site web</span><span data-lang="en">website</span></small>
+                                    <h3 class="projects-title">Growth Digital Knowledge</h3>
+                                </div>
+                                <a href="images/projects/gdk-site-vitrine.png" class="popup-image">
+                                    <img src="images/projects/gdk-site-vitrine.png" class="projects-image img-fluid" alt="Growth Digital Knowledge">
+                                </a>
+                                <p style="color:var(--p-color);margin-top:14px;" data-lang="fr">Site vitrine développé pour l'agence Growth Digital Knowledge, pensé pour présenter ses services et générer des contacts qualifiés.</p>
+                                <p style="color:var(--p-color);margin-top:14px;" data-lang="en">Showcase website built for the Growth Digital Knowledge agency, designed to present its services and generate qualified leads.</p>
+                                <div class="project-stack">HTML5 · CSS3 · JavaScript · PHP</div>
+                                <a href="https://growthdigitalknowledge.iceiy.com" target="_blank" rel="noopener noreferrer" class="projects-visit-btn"><span data-lang="fr">Visiter</span><span data-lang="en">Visit</span> <i class="bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding pt-0">
+                <div class="container">
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="cv-download-bar">
+                            <div>
+                                <strong class="site-footer-title d-block mb-2"><span data-lang="fr">Un projet similaire en tête ?</span><span data-lang="en">Have a similar project in mind?</span></strong>
+                                <p class="mb-0" style="color:var(--p-color);"><span data-lang="fr">Parlons de vos besoins et voyons comment je peux vous aider.</span><span data-lang="en">Let's talk about your needs and see how I can help.</span></p>
+                            </div>
+                            <a href="contact.html" class="custom-btn btn"><span data-lang="fr">Me contacter</span><span data-lang="en">Get in touch</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <a href="index.html" class="navbar-brand d-flex align-items-center gap-2 mb-3">
+                            <img src="images/logo-gdr.svg" alt="GDR" style="width:30px;height:30px;border-radius:7px;">
+                            <span>GDR<span style="color:var(--secondary-color);">.dev</span></span>
+                        </a>
+                        <p class="mb-0" style="color:var(--p-color);">
+                            <span data-lang="fr">Développeur web full-stack basé à Cotonou, Bénin — disponible pour des projets freelance.</span>
+                            <span data-lang="en">Full-stack web developer based in Cotonou, Benin — available for freelance projects.</span>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">navigation/</span><span data-lang="en">navigate/</span></strong>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="index.html" class="footer-menu-link"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a></li>
+                            <li class="footer-menu-item"><a href="services.html" class="footer-menu-link">Services</a></li>
+                            <li class="footer-menu-item"><a href="projects.html" class="footer-menu-link"><span data-lang="fr">Projets</span><span data-lang="en">Projects</span></a></li>
+                            <li class="footer-menu-item"><a href="cv.html" class="footer-menu-link">CV</a></li>
+                            <li class="footer-menu-item"><a href="blog.html" class="footer-menu-link">Blog</a></li>
+                            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">restons_connectés/</span><span data-lang="en">lets_connect/</span></strong>
+                        <ul class="social-icon">
+                            <li class="social-icon-item"><a href="https://github.com/Rhonel-ai" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-github"></a></li>
+                            <li class="social-icon-item"><a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="social-icon-link bi-whatsapp"></a></li>
+                            <li class="social-icon-item"><a href="https://www.facebook.com/profile.php?id=61586300297934" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-facebook"></a></li>
+                            <li class="social-icon-item"><a href="mailto:davidrhonelgogan4@gmail.com" class="social-icon-link bi-envelope"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">contact/</span><span data-lang="en">contact/</span></strong>
+                        <p class="mb-2"><a href="mailto:davidrhonelgogan4@gmail.com">davidrhonelgogan4@gmail.com</a></p>
+                        <p class="mb-0"><a href="tel:+2290150489089">(+229) 0150 489 089</a><br><a href="tel:+2290143075049">(+229) 0143 075 049</a></p>
+                    </div>
+
+                    <div class="col-lg-12 col-12">
+                        <div class="copyright-text-wrap">
+                            <p class="mb-0">
+                                <span class="copyright-text">© 2026 <a href="index.html">David Rhonel GOGAN — GDR.dev</a>.
+                                <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights reserved.</span></span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/site-extra.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script>
+            (function () {
+                var root = document.documentElement;
+                var toggles = document.querySelectorAll('.theme-toggle');
+                toggles.forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        root.classList.toggle('light-mode');
+                        localStorage.setItem('theme', root.classList.contains('light-mode') ? 'light' : 'dark');
+                    });
+                });
+            })();
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.querySelector('.navbar');
+                var threshold = 50;
+                window.addEventListener('scroll', function () {
+                    navbar.classList.toggle('is-sticky', window.scrollY > threshold);
+                });
+            });
+        </script>
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,205 @@
+/* ============================================================
+   SITE-EXTRA — multi-page additions on top of the terminal theme
+   ============================================================ */
+
+/* ---- i18n toggling ---- */
+html:not(.lang-en) [data-lang="en"] { display: none !important; }
+html.lang-en [data-lang="fr"] { display: none !important; }
+
+.lang-toggle {
+  font-family: var(--mono-font-family);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: var(--white-color);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-large);
+  padding: 6px 12px;
+  cursor: pointer;
+  line-height: 1;
+}
+.lang-toggle:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+/* ---- nav active state ---- */
+.navbar-nav .nav-link.is-active { color: var(--primary-color) !important; }
+.navbar-nav .nav-link.is-active::after { width: 100%; }
+
+/* ---- WhatsApp floating button ---- */
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  font-size: 26px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  text-decoration: none;
+  transition: transform .2s ease;
+}
+.whatsapp-float:hover { transform: scale(1.08); color: #fff; }
+
+/* ---- page hero (interior pages) ---- */
+.page-hero {
+  padding: 160px 0 60px 0;
+  position: relative;
+  z-index: 1;
+}
+.page-hero .section-eyebrow { margin-bottom: 14px; }
+.page-hero h1 { font-size: 44px; margin-bottom: 14px; }
+.page-hero p.lead { color: var(--p-color); max-width: 640px; font-size: 17px; }
+
+/* ---- breadcrumb path ---- */
+.path-crumb {
+  font-family: var(--mono-font-family);
+  font-size: 13px;
+  color: var(--p-color);
+}
+.path-crumb a { color: var(--secondary-color); text-decoration: none; }
+.path-crumb a:hover { text-decoration: underline; }
+
+/* ---- timeline (experience) ---- */
+.timeline { position: relative; padding-left: 28px; border-left: 2px solid var(--border-color); }
+.timeline-item { position: relative; padding-bottom: 40px; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  box-shadow: 0 0 0 4px var(--bg-elevated);
+}
+.timeline-date {
+  font-family: var(--mono-font-family);
+  font-size: 12.5px;
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+  display: block;
+}
+.timeline-org { color: var(--p-color); font-family: var(--mono-font-family); font-size: 14px; }
+.timeline-item h4 { margin-bottom: 2px; }
+.timeline-item ul { margin-top: 10px; padding-left: 20px; color: var(--p-color); }
+.timeline-item ul li { margin-bottom: 6px; }
+
+/* ---- tool grid (skills with logos) ---- */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px;
+}
+.tool-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-medium);
+  padding: 12px 14px;
+}
+.tool-chip img { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; }
+.tool-chip span { font-size: 14px; color: var(--white-color); font-weight: 500; }
+
+/* invert dark-glyph logos (github/wordpress) so they read on dark bg; light mode reverts */
+.tool-chip img.invert-dark { filter: invert(1) brightness(1.4); }
+html.light-mode .tool-chip img.invert-dark { filter: none; }
+
+/* ---- soft skill pills reuse ---- */
+.pill-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.pill {
+  font-family: var(--mono-font-family);
+  font-size: 12.5px;
+  color: var(--p-color);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-large);
+  padding: 7px 14px;
+}
+
+/* ---- blog cards ---- */
+.blog-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-medium);
+  padding: 34px;
+  margin-bottom: 28px;
+}
+.blog-meta {
+  font-family: var(--mono-font-family);
+  font-size: 12.5px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.blog-card h3 { margin-bottom: 14px; }
+.blog-card p { color: var(--p-color); margin-bottom: 14px; }
+.blog-suspense {
+  font-style: italic;
+  color: var(--white-color);
+  border-left: 3px solid var(--primary-color);
+  padding-left: 16px;
+  margin: 18px 0;
+}
+.blog-continue-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: var(--border-radius-large);
+  padding: 11px 22px;
+  text-decoration: none;
+}
+.blog-continue-btn:hover { opacity: .9; color: var(--dark-color); }
+
+/* ---- CV page ---- */
+.cv-download-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-medium);
+  padding: 22px 28px;
+  margin-bottom: 48px;
+}
+.cv-preview-frame {
+  width: 100%;
+  aspect-ratio: 210 / 297;
+  max-width: 480px;
+  border-radius: var(--border-radius-medium);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+/* ---- project link cards on Projects page (extend existing .projects-thumb) ---- */
+.project-stack {
+  font-family: var(--mono-font-family);
+  font-size: 12px;
+  color: var(--secondary-color);
+  margin-top: 8px;
+}
+
+/* ---- footer page-links row ---- */
+.footer-menu-link.is-active { color: var(--primary-color); }
+
+@media (max-width: 991px) {
+  .page-hero { padding-top: 130px; }
+  .page-hero h1 { font-size: 32px; }
+}

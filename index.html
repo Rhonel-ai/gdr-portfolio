@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <script>
+            (function () {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'light') { document.documentElement.classList.add('light-mode'); }
+                var lang = localStorage.getItem('siteLang');
+                if (lang === 'en') { document.documentElement.classList.add('lang-en'); }
+            })();
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="David Rhonel GOGAN, développeur web full-stack à Cotonou, Bénin. Sites vitrines, e-commerce et solutions digitales sur mesure (PHP, Laravel, MySQL).">
+        <meta name="author" content="David Rhonel GOGAN">
+
+        <title>David Rhonel GOGAN — Développeur Web Full-Stack | Cotonou, Bénin</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+        <link rel="apple-touch-icon" href="images/favicon-180.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+        <link href="css/site-extra.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section class="preloader">
+            <div class="spinner"><span class="spinner-rotate"></span></div>
+        </section>
+
+        <a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+            <i class="bi-whatsapp"></i>
+        </a>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0 d-flex align-items-center gap-2">
+                    <img src="images/logo-gdr.svg" alt="GDR" style="width:32px;height:32px;border-radius:8px;">
+                    <span>GDR<span style="color:var(--secondary-color);">.dev</span></span>
+                </a>
+
+                <div class="d-flex align-items-center d-lg-none">
+                    <button class="lang-toggle me-2" type="button">EN</button>
+                    <button class="theme-toggle me-3" id="themeToggleMobile" type="button" aria-label="Toggle color theme">
+                        <i class="bi-moon-stars-fill theme-icon-dark"></i>
+                        <i class="bi-sun-fill theme-icon-light"></i>
+                    </button>
+                    <a class="custom-btn btn" href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">
+                        <i class="bi-whatsapp me-1"></i> WhatsApp
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html"><span data-lang="fr">Services</span><span data-lang="en">Services</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html"><span data-lang="fr">Projets</span><span data-lang="en">Projects</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span data-lang="fr">Contact</span><span data-lang="en">Contact</span></a></li>
+                    </ul>
+
+                    <div class="d-lg-flex align-items-center d-none ms-auto">
+                        <button class="lang-toggle me-3" type="button">EN</button>
+                        <button class="theme-toggle me-3" id="themeToggleDesktop" type="button" aria-label="Toggle color theme">
+                            <i class="bi-moon-stars-fill theme-icon-dark"></i>
+                            <i class="bi-sun-fill theme-icon-light"></i>
+                        </button>
+                        <a class="custom-btn btn" href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer">
+                            <i class="bi-whatsapp me-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-7 col-12">
+                            <div class="hero-text">
+
+                                <span class="hero-eyebrow">
+                                    <span data-lang="fr">$ Qui_suis-je?</span><span data-lang="en">$ Who_am_I?</span><span class="caret"></span>
+                                </span>
+
+                                <div class="hero-title-wrap mb-4">
+                                    <h1 class="hero-title mb-0">
+                                        <span data-lang="fr">Bonjour à tous.<br>Je suis David Rhonel GOGAN.</span>
+                                        <span data-lang="en">Hi there.<br>I'm David Rhonel GOGAN.</span>
+                                    </h1>
+                                </div>
+
+                                <h2 class="mb-4">
+                                    <span data-lang="fr">Développeur full-stack — je conçois et déploie des applications web robustes, du back-end à l'interface.</span>
+                                    <span data-lang="en">Full-stack developer — I design and ship robust web applications, from the back-end to the interface.</span>
+                                </h2>
+                                <p class="mb-4 d-flex flex-wrap gap-3">
+                                    <a class="custom-btn btn custom-link" href="about.html">
+                                        <span data-lang="fr">./Quel_est_mon_parcours?</span><span data-lang="en">./My_background?</span>
+                                    </a>
+                                    <a class="custom-btn custom-border-btn btn" href="projects.html">
+                                        <span data-lang="fr">Voir mes projets</span><span data-lang="en">View my projects</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-12 position-relative hero-image-col">
+                            <div class="hero-image-wrap"></div>
+                            <div id="heroCarousel" class="carousel slide hero-image" data-bs-ride="carousel" data-bs-interval="4000">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="images/portrait-1.jpg" class="d-block img-fluid" alt="David Rhonel GOGAN"></div>
+                                    <div class="carousel-item"><img src="images/portrait-2.jpg" class="d-block img-fluid" alt="David Rhonel GOGAN"></div>
+                                    <div class="carousel-item"><img src="images/portrait-3.jpg" class="d-block img-fluid" alt="David Rhonel GOGAN"></div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section-padding">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-12">
+                            <div class="section-title-wrap mb-3">
+                                <span class="section-eyebrow"><span data-lang="fr">$ cat a-propos.md</span><span data-lang="en">$ cat about.md</span></span>
+                            </div>
+                            <h3 class="pt-2 mb-3"><span data-lang="fr">Un peu plus sur GDR</span><span data-lang="en">A bit more about GDR</span></h3>
+                            <p data-lang="fr">Développeur web junior formé en Génie Logiciel et Réseau au CFPML de Cotonou, je maîtrise HTML5, CSS3, JavaScript et PHP, avec une spécialisation sur Laravel et Bootstrap. Après un stage chez Rich Digital Activity, je conçois aujourd'hui des sites vitrines, marketplaces et outils de gestion sur mesure pour des structures locales.</p>
+                            <p data-lang="en">Junior web developer trained in Software Engineering &amp; Networks at CFPML Cotonou, I work with HTML5, CSS3, JavaScript and PHP, specialising in Laravel and Bootstrap. After an internship at Rich Digital Activity, I now build showcase sites, marketplaces and custom management tools for local businesses.</p>
+                            <a href="about.html" class="custom-btn custom-border-btn btn mt-2"><span data-lang="fr">en_savoir_plus()</span><span data-lang="en">learn_more()</span></a>
+                        </div>
+                        <div class="col-lg-5 col-12 mt-5 mt-lg-0 text-center">
+                            <img src="images/about-1.jpg" class="img-fluid" style="border-radius:16px;" alt="David Rhonel GOGAN">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="about-thumb">
+                                <div class="row">
+                                    <div class="col-lg-3 col-6 featured-border-bottom py-2">
+                                        <strong class="featured-numbers">2</strong>
+                                        <p class="featured-text"><span data-lang="fr">Année d'expérience</span><span data-lang="en">Years of experience</span></p>
+                                    </div>
+                                    <div class="col-lg-3 col-6 featured-border-start featured-border-bottom ps-5 py-2">
+                                        <strong class="featured-numbers">4+</strong>
+                                        <p class="featured-text"><span data-lang="fr">Clients satisfaits</span><span data-lang="en">Happy clients</span></p>
+                                    </div>
+                                    <div class="col-lg-3 col-6 featured-border-start-lg pt-4 pt-lg-0 ps-lg-5">
+                                        <strong class="featured-numbers">6</strong>
+                                        <p class="featured-text"><span data-lang="fr">Projets réalisés</span><span data-lang="en">Projects delivered</span></p>
+                                    </div>
+                                    <div class="col-lg-3 col-6 featured-border-start pt-4 pt-lg-0 ps-5">
+                                        <strong class="featured-numbers">2026</strong>
+                                        <p class="featured-text"><span data-lang="fr">Diplômé Génie Logiciel</span><span data-lang="en">Software Eng. graduate</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clients section-padding">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-12">
+                            <div class="section-title-wrap mb-5 justify-content-center">
+                                <span class="section-eyebrow"><span data-lang="fr">// Les structures avec qui j'ai travaillé</span><span data-lang="en">// Organisations I've worked with</span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-4 ms-auto clients-item-height"><img src="images/clients/Fash.png" class="clients-image img-fluid" alt=""></div>
+                        <div class="col-lg-2 col-4 clients-item-height"><img src="images/clients/LOGI.png" class="clients-image img-fluid" alt=""></div>
+                        <div class="col-lg-2 col-4 clients-item-height"><img src="images/clients/elg_1.png" class="clients-image img-fluid" alt=""></div>
+                        <div class="col-lg-2 col-4 clients-item-height"><img src="images/clients/RDA.png" class="clients-image img-fluid" alt=""></div>
+                        <div class="col-lg-2 col-4 me-auto clients-item-height"><img src="images/clients/GDK.png" class="clients-image img-fluid" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services section-padding">
+                <div class="container">
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="section-title-wrap mb-5 justify-content-center">
+                            <span class="section-eyebrow"><span data-lang="fr">$ ls services/ --preview</span><span data-lang="en">$ ls services/ --preview</span></span>
+                        </div>
+                        <div class="row pt-lg-4">
+                            <div class="col-lg-4 col-12 mb-4">
+                                <div class="services-thumb">
+                                    <h3 class="mb-3"><span data-lang="fr">Sites vitrines</span><span data-lang="en">Showcase sites</span></h3>
+                                    <p data-lang="fr">Un site professionnel et responsive pour présenter votre activité et gagner en crédibilité.</p>
+                                    <p data-lang="en">A professional, responsive site to showcase your business and build credibility.</p>
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center"><i class="services-icon bi-globe"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 mb-4">
+                                <div class="services-thumb services-thumb-up">
+                                    <h3 class="mb-3"><span data-lang="fr">Sites e-commerce</span><span data-lang="en">E-commerce sites</span></h3>
+                                    <p data-lang="fr">Boutique en ligne complète avec gestion des produits et suivi des commandes.</p>
+                                    <p data-lang="en">A full online store with product management and order tracking.</p>
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center"><i class="services-icon bi-cart3"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 mb-4">
+                                <div class="services-thumb">
+                                    <h3 class="mb-3"><span data-lang="fr">Solutions digitales</span><span data-lang="en">Digital solutions</span></h3>
+                                    <p data-lang="fr">Applications web sur mesure : gestion de stock, point de vente, plateformes internes.</p>
+                                    <p data-lang="en">Custom web applications: inventory, point of sale, internal platforms.</p>
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center"><i class="services-icon bi-cpu"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="services.html" class="custom-btn btn"><span data-lang="fr">Voir tous les services &amp; tarifs</span><span data-lang="en">See all services &amp; pricing</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                            <div class="section-title-wrap mb-4">
+                                <span class="section-eyebrow"><span data-lang="fr">$ git log --projets --preview</span><span data-lang="en">$ git log --projects --preview</span></span>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <small class="projects-tag"><span data-lang="fr">application web</span><span data-lang="en">web app</span></small>
+                                    <h3 class="projects-title">ELG Commerce</h3>
+                                </div>
+                                <a href="images/projects/elg-commerce-dashboard.png" class="popup-image">
+                                    <img src="images/projects/elg-commerce-dashboard.png" class="projects-image img-fluid" alt="ELG Commerce">
+                                </a>
+                                <a href="https://elg.iceiy.com" target="_blank" rel="noopener noreferrer" class="projects-visit-btn"><span data-lang="fr">Visiter</span><span data-lang="en">Visit</span> <i class="bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <small class="projects-tag"><span data-lang="fr">solution digitale</span><span data-lang="en">digital solution</span></small>
+                                    <h3 class="projects-title">WazoBuy</h3>
+                                </div>
+                                <a href="images/projects/wazobuy-marketplace.png" class="popup-image">
+                                    <img src="images/projects/wazobuy-marketplace.png" class="projects-image img-fluid" alt="WazoBuy">
+                                </a>
+                                <a href="https://wazobuy.iceiy.com" target="_blank" rel="noopener noreferrer" class="projects-visit-btn"><span data-lang="fr">Visiter</span><span data-lang="en">Visit</span> <i class="bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <small class="projects-tag"><span data-lang="fr">site web</span><span data-lang="en">website</span></small>
+                                    <h3 class="projects-title">GDK</h3>
+                                </div>
+                                <a href="images/projects/gdk-site-vitrine.png" class="popup-image">
+                                    <img src="images/projects/gdk-site-vitrine.png" class="projects-image img-fluid" alt="GDK">
+                                </a>
+                                <a href="https://growthdigitalknowledge.iceiy.com" target="_blank" rel="noopener noreferrer" class="projects-visit-btn"><span data-lang="fr">Visiter</span><span data-lang="en">Visit</span> <i class="bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="projects.html" class="custom-btn custom-border-btn btn"><span data-lang="fr">Voir tous les projets</span><span data-lang="en">See all projects</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="cv-download-bar">
+                                <div>
+                                    <strong class="site-footer-title d-block mb-2"><span data-lang="fr">$ open cv.pdf</span><span data-lang="en">$ open cv.pdf</span></strong>
+                                    <p class="mb-0" style="color:var(--p-color);"><span data-lang="fr">Mon parcours complet, mes compétences et mes projets, prêts à télécharger.</span><span data-lang="en">My full background, skills and projects, ready to download.</span></p>
+                                </div>
+                                <a href="cv.html" class="custom-btn btn"><span data-lang="fr">Consulter mon CV</span><span data-lang="en">View my resume</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" id="section_5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 mx-auto text-center">
+                            <div class="section-title-wrap mb-4 justify-content-center">
+                                <span class="section-eyebrow"><span data-lang="fr">$ ./contact.sh</span><span data-lang="en">$ ./contact.sh</span></span>
+                            </div>
+                            <h3 class="mb-4"><span data-lang="fr">Un projet en tête ? Parlons-en.</span><span data-lang="en">Got a project in mind? Let's talk.</span></h3>
+                            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                                <a href="contact.html" class="custom-btn btn"><span data-lang="fr">Démarrer un projet</span><span data-lang="en">Start a project</span></a>
+                                <a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="custom-btn custom-border-btn btn"><i class="bi-whatsapp me-1"></i> WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <a href="index.html" class="navbar-brand d-flex align-items-center gap-2 mb-3">
+                            <img src="images/logo-gdr.svg" alt="GDR" style="width:30px;height:30px;border-radius:7px;">
+                            <span>GDR<span style="color:var(--secondary-color);">.dev</span></span>
+                        </a>
+                        <p class="mb-0" style="color:var(--p-color);">
+                            <span data-lang="fr">Développeur web full-stack basé à Cotonou, Bénin — disponible pour des projets freelance.</span>
+                            <span data-lang="en">Full-stack web developer based in Cotonou, Benin — available for freelance projects.</span>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">navigation/</span><span data-lang="en">navigate/</span></strong>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="index.html" class="footer-menu-link"><span data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link"><span data-lang="fr">À propos</span><span data-lang="en">About</span></a></li>
+                            <li class="footer-menu-item"><a href="services.html" class="footer-menu-link">Services</a></li>
+                            <li class="footer-menu-item"><a href="projects.html" class="footer-menu-link"><span data-lang="fr">Projets</span><span data-lang="en">Projects</span></a></li>
+                            <li class="footer-menu-item"><a href="cv.html" class="footer-menu-link">CV</a></li>
+                            <li class="footer-menu-item"><a href="blog.html" class="footer-menu-link">Blog</a></li>
+                            <li class="footer-menu-item"><a href="contact.html" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">restons_connectés/</span><span data-lang="en">lets_connect/</span></strong>
+                        <ul class="social-icon">
+                            <li class="social-icon-item"><a href="https://github.com/Rhonel-ai" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-github"></a></li>
+                            <li class="social-icon-item"><a href="https://wa.me/22950489089?text=Bonjour%20David%2C%20je%20viens%20de%20votre%20portfolio%20et%20j%27aimerais%20%C3%A9changer%20sur%20un%20projet." target="_blank" rel="noopener noreferrer" class="social-icon-link bi-whatsapp"></a></li>
+                            <li class="social-icon-item"><a href="https://www.facebook.com/profile.php?id=61586300297934" target="_blank" rel="noopener noreferrer" class="social-icon-link bi-facebook"></a></li>
+                            <li class="social-icon-item"><a href="mailto:davidrhonelgogan4@gmail.com" class="social-icon-link bi-envelope"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-5">
+                        <strong class="site-footer-title d-block mb-3"><span data-lang="fr">contact/</span><span data-lang="en">contact/</span></strong>
+                        <p class="mb-2"><a href="mailto:davidrhonelgogan4@gmail.com">davidrhonelgogan4@gmail.com</a></p>
+                        <p class="mb-0"><a href="tel:+2290150489089">(+229) 0150 489 089</a><br><a href="tel:+2290143075049">(+229) 0143 075 049</a></p>
+                    </div>
+
+                    <div class="col-lg-12 col-12">
+                        <div class="copyright-text-wrap">
+                            <p class="mb-0">
+                                <span class="copyright-text">© 2026 <a href="index.html">David Rhonel GOGAN — GDR.dev</a>.
+                                <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights reserved.</span></span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/site-extra.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script>
+            (function () {
+                var root = document.documentElement;
+                var toggles = document.querySelectorAll('.theme-toggle');
+                toggles.forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        root.classList.toggle('light-mode');
+                        localStorage.setItem('theme', root.classList.contains('light-mode') ? 'light' : 'dark');
+                    });
+                });
+            })();
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.querySelector('.navbar');
+                var threshold = 50;
+                window.addEventListener('scroll', function () {
+                    navbar.classList.toggle('is-sticky', window.scrollY > threshold);
+                });
+            });
+        </script>
+
+        
+
+    </body>
+</html>
